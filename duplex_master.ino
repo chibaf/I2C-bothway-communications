@@ -27,14 +27,14 @@ void loop() {
    Serial.print("data.f=");
    Serial.println(data.f);
   
-   data.f=random(1024);
+   data.f=random(1024);  // generate float
    Serial.print("2:data.f=");
    Serial.println(data.f);
    
-   b2[0]=data.b[0];   // divite integer to one byte
-   b2[1]=data.b[1];   // divite integer to one byte
-   b2[2]=data.b[2];   // divite integer to one byte
-   b2[3]=data.b[3];   // divite integer to one byte
+   b2[0]=data.b[0];   // divite float to one byte
+   b2[1]=data.b[1];   // divite float to one byte
+   b2[2]=data.b[2];   // divite float to one byte
+   b2[3]=data.b[3];   // divite float to one byte
 // send 4 bytes to slave
    Wire.beginTransmission(0); // transmit to device #0
    Wire.write(b2[0]);    // send one byte

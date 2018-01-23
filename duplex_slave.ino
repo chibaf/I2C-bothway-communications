@@ -21,7 +21,7 @@ void loop() {
 }
 
 void requestEvent() {
-  data.f=random(1024);  // generate date which is sent to master
+  data.f=random(1024);  // generate data which is sent to master
   b2[0]=data.b[0];
   b2[1]=data.b[1];
   b2[2]=data.b[2];
